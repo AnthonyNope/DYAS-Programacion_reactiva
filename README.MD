@@ -1,5 +1,31 @@
 # Taller sobre Operadores de Programación Reactiva
 
+---
+
+### ✅ Ejemplo propio: Procesamiento reactivo de temperaturas con RxJava
+
+Este ejemplo simula la lectura de temperaturas desde sensores y aplica operadores de programación reactiva con RxJava.
+
+#### Qué hace el programa:
+1. Recibe una lista de temperaturas (simuladas).
+2. Filtra las temperaturas mayores a 25°C (`filter`)
+3. Convierte cada valor a grados Fahrenheit (`map`)
+4. Elimina duplicados (`distinct`)
+5. Toma solo las primeras 5 (`take`)
+6. Calcula el promedio final (`reduce`)
+
+#### Código principal (`SensorDataExample.java`)
+
+### Para ejecutarlo:
+
+mvn compile
+mvn exec:java -Dexec.mainClass=com.example.SensorDataExample
+
+
+
+
+
+
 ## Objetivo
 
 El objetivo de este taller es aprender a utilizar al menos cinco operadores de programación reactiva utilizando RxJava o Reactor. Implementaremos ejemplos prácticos que muestran cómo estos operadores transforman y manejan flujos de datos de manera reactiva. Además, los estudiantes crearán su propio ejemplo para aplicar lo aprendido.
